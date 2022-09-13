@@ -11,7 +11,7 @@ int main(void)
 	for (k = 122; k > 96; k--)
 	{
 		putchar(k);
-	} 
+	}
 	putchar('\n');
 	return (0);
 }
