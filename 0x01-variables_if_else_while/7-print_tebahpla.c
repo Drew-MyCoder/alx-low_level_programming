@@ -7,8 +7,11 @@
 int main(void)
 {
 	int k;
-	for (k = 122; k > 96; k--){
+
+	for (k = 122; k > 96; k--)
+	{
 		putchar(k);
-	} putchar('\n');
+	} 
+	putchar('\n');
 	return(0);
 }
