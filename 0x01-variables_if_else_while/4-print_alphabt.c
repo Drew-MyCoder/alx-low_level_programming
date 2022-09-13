@@ -1,16 +1,21 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
 /**
- * main - Prints alphabets except q and e
+ * main - Prints the alphabet without q and e.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int k;
-	for (k = 97; k < 123; k++)
+	int i;
+
+	for (i = 97; i < 123; i++)
 	{
-		if (k != 101 && k != 113){
-			putchar(k);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
 		}
 	}
 	putchar('\n');
