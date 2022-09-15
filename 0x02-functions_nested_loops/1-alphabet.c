@@ -1,0 +1,16 @@
+#include "main.h"
+
+/**
+ * print_alp - Check description
+ * Description: It prints the alphabet in lowercase follwoed by a new line
+ * Return: Nothing
+ */
+void print_alphabet(voi)
+{
+	char i;
+
+	for(i = 'a' ; i <= 'z' ; i++)
+		_putchar(i);
+	_putchar('\n');
+}
+
