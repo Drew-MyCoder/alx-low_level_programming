@@ -7,7 +7,7 @@
  *
  * Return: A pointer to the destination string @dest
  */
-char *strcat(char *dest, const char *src)
+char *strcat(char *dest, char *src)
 {
 	/* concat two strings */
 	int i = 0, length_dest = 0;
