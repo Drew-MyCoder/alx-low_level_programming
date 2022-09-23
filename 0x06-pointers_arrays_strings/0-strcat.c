@@ -1,22 +1,28 @@
 #include "main.h"
 
 /**
- * strcat - Concat the string pointed to by @src to include the terminating null bytr
- * @dest: A pointer to the string to be concatenated
- * @src: The source string to be appended 
- *
- * Return: A pointer to the destination string @dest
+ * _strcat - Concatenate two strings
+ * @dest: destination
+ * @src: source
+ * Return: the pointer to dest
  */
-char *strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	/* concat two strings */
-	int i = 0, length_dest = 0;
+	int i = 0, d = 0;
 
-	while (dest[i++])
-		length_dest++;
+	while (*(dest + i) != '\0')
+	{
+		i++;
+	}
 
-	for (i = 0; src[i]; i++)
-		dest[length_dest++] = src[i];
-
+	while (d >= 0)
+	{
+		*(dest + i) = *(src + d);
+		if (*(src + d) == '\0')
+			break;
+		i++;
+		d++;
+	}
 	return (dest);
 }
