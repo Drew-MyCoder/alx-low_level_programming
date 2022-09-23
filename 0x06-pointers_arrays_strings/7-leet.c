@@ -6,23 +6,26 @@
  *
  * Return: A posinter to the encoded string
  */
-char *leet(char *str)
+char *leet(char *s)
 {
 	/* to encode string */
 	int i = 0, j;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', '?', 'T'};
+	int low_let[] = {97, 101, 111, 116, 108};
+	int up_let[] = {65, 69, 70, 84, 76};
+	int nums[] = {52, 51, 48, 55, 49};
 	
-	while (str[i]
+	while (*(s + i) != '\0')
 	{
-		for (j = 0;  j <= 7; j++)
+		for (j = 0; j < 5; j++)
 		{
-			if (str[i] == leet[j] ||
-					str[i] - 32 == leet[j])
-						str[i] = j + '0';
+			if (*(s + i == low_let[j] || *(s + i) == up_let[j])
+					{
+						*(s + i) = nums[j];
+						break;
+					}
 		}
-
 		i++;
 	}
 
-	return (str);
+	return (s);
 }
