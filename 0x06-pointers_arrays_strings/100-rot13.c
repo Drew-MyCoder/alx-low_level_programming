@@ -6,7 +6,7 @@
  * Return: the pointer to dest
  */
 
-char *rot13(char *s)
+char *rot13(char *)
 {
 	/* use rot 13 */
 	int cont = 0, j;
