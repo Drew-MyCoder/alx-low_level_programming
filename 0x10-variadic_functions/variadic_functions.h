@@ -1,16 +1,12 @@
-#section .data
-	msg db "Hello, Holberton",10
+#ifndef _VARIADIC_FUNCTIONS_
+#define _VARIADIC_FUNCTIONS_
 
-	section .text
-	global main
+#include <stdarg.h>
+#include <stdio.h>
 
-main:
-	mov rax, 1
-	mov rdi, 1
-	mov rsi, msg
-	mov rdx, 17
-	syscall
+int sum_them_all(const unsigned int n, ...);
+void print_numbers(const char *separator, const unsigned int n, ...);
+void print_strings(const char *separator, const unsigned int n, ...);
+void print_all(const char * const format, ...);
 
-	mov rax, 60
-	mov rdi, 0
-	syscall
+#endif

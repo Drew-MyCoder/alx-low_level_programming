@@ -6,7 +6,7 @@
  *
  * Return: sum of its parameters
  */
-int sum_them_all(conts unsigned int n, ...);
+int sum_them_all(conts unsigned int n, ...)
 {
 	/* return sum */
 	va_list valist;
